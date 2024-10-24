@@ -1,0 +1,255 @@
+.header_.h1{
+    color: rgb(0, 0, 0);
+}
+
+.form-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.form-card {
+    width: 100%;
+    max-width: 500px;
+}
+
+.card {
+    margin-bottom: 20px; /* Ajoute un espacement supplémentaire en bas de chaque carte */
+}
+
+.card img {
+    object-fit: cover; /* Ajuste l'image pour qu'elle remplisse bien l'espace */
+    max-height: 150px; /* Limite la hauteur des images */
+}
+
+/* Centrage des boutons et espacement */
+.navbar-nav {
+    display: flex;
+    margin-left: auto;
+    justify-content: center; /* Centrer les boutons horizontalement */
+    gap: 15px; /* Espacement entre les boutons */
+}
+
+/* Apparence des boutons de navigation */
+.nav-link {
+    border-radius: 20px; /* Bordures arrondies */
+    padding: 10px 20px; /* Ajouter de l'espace à l'intérieur des boutons */
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Apparence au survol */
+.nav-link:hover {
+    background-color: #f7a6d5; /* Couleur de fond plus claire au survol */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Ombre légère au survol */
+}
+
+/* Centrer le formulaire de recherche */
+.navbar .d-flex {
+    justify-content: center; /* Centrer le formulaire */
+    margin-top: 15px; /* Ajouter un peu d'espace en haut */
+}
+
+/* Décaler le logo légèrement à droite */
+.navbar-brand {
+    margin-left: 30px; /* Décale le logo de 20px vers la droite */
+}
+/* Optionnel : ajuster la taille du logo si nécessaire */
+.navbar-brand img {
+    
+    width: 100px; /* Taille personnalisée pour le logo */
+    height: auto; /* Maintenir le ratio d'aspect */
+}
+
+/* Apparence des boutons de navigation */
+.nav-link {
+    border-radius: 20px; /* Bordures arrondies */
+    padding: 10px 20px; /* Ajouter de l'espace à l'intérieur des boutons */
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Apparence au survol */
+.nav-link:hover {
+    background-color: #f7a6d5; /* Couleur de fond plus claire au survol */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Ombre légère au survol */
+}
+
+.articles-title {
+    text-align: center;
+    margin-top: 30px;
+    font-weight: bold; /* ou une autre valeur pour le rendre plus visible */
+    font-size: 2.5rem; /* Optionnel : ajuste la taille du texte */
+}
+
+.header_ {
+    text-align: center; /* Centre le texte à l'intérieur de la div */
+    margin: 20px 0; /* Ajoute un peu d'espace au-dessus et en dessous du titre */
+}
+
+.article-titre {
+    font-size: 2rem; /* Ajuste la taille du titre si nécessaire */
+    color: #333; /* Change la couleur du texte si souhaité */
+}
+
+.text-end {
+    text-align: right; /* Aligne le texte à droite */
+}
+
+.header_ {
+    text-align: center; /* Centre le texte à l'intérieur de la div */
+    margin: 20px 0; /* Ajoute un peu d'espace au-dessus et en dessous du titre */
+}
+
+/* Optionnel : Ajoute de l'espace au-dessus du tableau */
+.table {
+    margin-top: 20px; /* Espace entre le bouton et le tableau */
+}
+
+.custom-form {
+    max-width: 600px; /* Limite la largeur du formulaire */
+    margin: 40px auto; /* Centre le formulaire horizontalement */
+    padding: 20px; /* Ajoute du padding à l'intérieur */
+    border-radius: 10px; /* Arrondit les coins */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Ombre douce autour du formulaire */
+    background-color: #f9f9f9; /* Couleur de fond légèrement grise */
+}
+
+h1 {
+    color: #333; /* Couleur du titre */
+}
+
+.custom-form p {
+    margin-bottom: 15px; /* Espace entre les champs */
+}
+
+.custom-form p label {
+    font-weight: bold; /* Mettre en gras les étiquettes */
+    color: #333; /* Couleur des étiquettes */
+}
+
+.custom-form p input, 
+.custom-form p textarea,
+.custom-form p select {
+    width: 100%; /* Prend toute la largeur */
+    padding: 10px; /* Padding interne */
+    border-radius: 5px; /* Coins arrondis */
+    border: 1px solid #ccc; /* Bordure légère */
+    transition: border-color 0.3s; /* Transition pour l'effet au focus */
+}
+
+.custom-form p input:focus, 
+.custom-form p textarea:focus,
+.custom-form p select:focus {
+    border-color: #007bff; /* Couleur de la bordure au focus */
+}
+
+.custom-form p input:not(:focus), 
+.custom-form p textarea:not(:focus),
+.custom-form p select:not(:focus) {
+    border-color: #585858; /* Couleur de la bordure lorsqu'il n'est pas en focus */
+}
+
+.btn-primary {
+    background-color: #007bff; /* Couleur du bouton */
+    border: none; /* Supprime la bordure */
+    transition: background-color 0.3s; /* Transition pour l'effet au survol */
+}
+
+.btn-primary:hover {
+    background-color: #0056b3; /* Couleur au survol */
+}
+
+.text-danger {
+    font-size: 0.875em; /* Taille du texte pour les erreurs */
+}
+
+h3 {
+    color: #333; /* Couleur du titre */
+    margin-bottom: 20px; /* Espace sous le titre */
+}
+
+.carousel-inner img {
+    max-height: 500px; /* Limiter la hauteur des images du carrousel */
+    object-fit: cover; /* Couvrir l'espace sans déformer l'image */
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    background-color: rgba(0, 0, 0, 0.5); /* Fond des icônes de contrôle */
+    border-radius: 50%; /* Arrondir les contrôles */
+}
+
+.carousel-indicators [data-bs-target] {
+    background-color: #000; /* Couleur des indicateurs */
+}
+
+.hero-section {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.603), rgba(0, 0, 0, 0.603)), url('../images/c.jpg'); /* Chemin de l'image */
+    background-size: cover; /* Couvre toute la section */
+    height: 400px; /* Hauteur de la section */
+    background-position: center; /* Centre l'image */
+    display: flex; /* Flexbox pour centrer le contenu */
+    align-items: center; /* Centre verticalement */
+    justify-content: center; /* Centre horizontalement */
+}
+
+
+/* Style pour le h1 de la section hero */
+.hero-section h1 {
+    font-size: 3rem; /* Taille de la police */
+    font-weight: bold; /* Met le texte en gras */
+    text-align: center; /* Centre le texte */
+    color: #fff; /* Couleur du texte en blanc */
+    margin: 0; /* Supprime les marges par défaut */
+    padding: 20px 0; /* Ajoute un peu d'espace autour du texte */
+
+    border-radius: 10px; /* Arrondi les coins du fond */
+}
+
+/* Optionnel : ajouter un effet au survol */
+.hero-section h1:hover {
+    color: #f58ff5; /* Change la couleur du texte au survol */
+    transform: scale(1.05); /* Légère augmentation de la taille */
+    transition: all 0.3s ease; /* Animation fluide */
+}
+
+.hero-section h1 {
+    font-size: 3rem; /* Taille de la police */
+    font-weight: bold; /* Met le texte en gras */
+    text-align: center; /* Centre le texte */
+    color: #fff; /* Couleur du texte en blanc */
+    margin: 0; /* Supprime les marges par défaut */
+    padding: 20px 30px; /* Ajoute un peu d'espace autour du texte */
+    border-radius: 10px; /* Arrondi les coins du fond */
+    animation: fadeIn 0.5s ease; /* Animation d'apparition */
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+
+.custom-form {
+    padding: 20px; /* Ajoute un peu de rembourrage autour du formulaire */
+    background-color: #f8f9fa; /* Couleur de fond pour le formulaire */
+    border-radius: 5px; /* Arrondi les coins */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Ombre légère */
+}
+
+img {
+    max-height: 500px; /* Limite la hauteur de l'image */
+    object-fit: cover; /* Garde les proportions de l'image */
+}
+
+.custom-form1 {
+    padding: 20px; /* Ajoute du rembourrage autour du formulaire */
+    background-color: #f8f9fa; /* Couleur de fond pour le formulaire */
+    border-radius: 5px; /* Arrondi les coins */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Ombre légère */
+}
+
+img {
+    max-height: 500px; /* Limite la hauteur de l'image */
+    object-fit: cover; /* Garde les proportions de l'image */
+}
