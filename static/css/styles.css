@@ -253,3 +253,26 @@ img {
     max-height: 500px; /* Limite la hauteur de l'image */
     object-fit: cover; /* Garde les proportions de l'image */
 }
+
+/* Style pour la section d'accueil */
+.hero-section {
+    background-image: url("{% static 'images/accueil2.jpg' %}"); /* Remplacez 'your-image.jpg' par le nom de votre image */
+    background-size: cover;
+    background-position: center;
+    height: 100vh; /* Hauteur de la section : pleine hauteur de l'écran */
+    color: #ffffff;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Ombre pour améliorer la lisibilité du texte */
+}
+
+/* Style du bouton */
+.hero-section .btn-primary {
+    background-color: #ff8c00; /* Couleur du bouton */
+    border: none;
+    padding: 10px 20px;
+    font-size: 1.2rem;
+    transition: background-color 0.3s ease;
+}
+
+.hero-section .btn-primary:hover {
+    background-color: #ff6f00; /* Couleur au survol */
+}
