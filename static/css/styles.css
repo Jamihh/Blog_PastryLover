@@ -255,8 +255,8 @@ img {
 }
 
 /* Style pour la section d'accueil */
-.hero-section {
-    background-image: url("{% static 'images/accueil2.jpg' %}"); /* Remplacez 'your-image.jpg' par le nom de votre image */
+.hero-home-section {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.603), rgba(0, 0, 0, 0.603)), url('../images/accueil2.jpg'); /* Remplacez 'your-image.jpg' par le nom de votre image */
     background-size: cover;
     background-position: center;
     height: 100vh; /* Hauteur de la section : pleine hauteur de l'écran */
@@ -265,14 +265,14 @@ img {
 }
 
 /* Style du bouton */
-.hero-section .btn-primary {
-    background-color: #ff8c00; /* Couleur du bouton */
+.hero-home-section .btn-primary {
+    background-color: #ee5ac2; /* Couleur du bouton */
     border: none;
     padding: 10px 20px;
     font-size: 1.2rem;
     transition: background-color 0.3s ease;
 }
 
-.hero-section .btn-primary:hover {
-    background-color: #ff6f00; /* Couleur au survol */
+.hero-home-section .btn-primary:hover {
+    background-color: #ee5ac2; /* Couleur au survol */
 }

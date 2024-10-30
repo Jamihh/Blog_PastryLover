@@ -10,6 +10,12 @@ def home(request):
     articles = Article.objects.all()
     return render(request, "index.html", {"articles":articles} )
 
+def accueil(request):
+    return render(request, 'accueil.html')
+
+def login(request):
+    return render(request, 'login.html')
+
 
 def useradmin(request):
     articles = Article.objects.all() # Récupère tous les articles
