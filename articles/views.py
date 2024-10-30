@@ -11,23 +11,23 @@ def home(request):
     articles = Article.objects.all()
     return render(request, "index.html", {"articles":articles} )
 
-def accueil(request):
-    return render(request, 'accueil.html')
+#def accueil(request):
+#    return render(request, 'accueil.html')
 
 
-def login(request):
-    if request.method == 'POST':
-        form = LoginForm(request.POST)
-        if form.is_valid():
-            username = form.cleaned_data['username']
-            password = form.cleaned_data['password']
-            user = authenticate(request, username=username, password=password)
-            if user is not None:
-                login(request, user)
-                return redirect('index')  # Remplacez 'home' par le nom de votre URL pour la page d'accueil
-    else:
-        form = LoginForm()
-    return render(request, 'login.html', {'form': form})
+#def login(request):
+#    if request.method == 'POST':
+#        form = LoginForm(request.POST)
+#        if form.is_valid():
+#            username = form.cleaned_data['username']
+#            password = form.cleaned_data['password']
+#            user = authenticate(request, username=username, password=password)
+#            if user is not None:
+#                login(request, user)
+#                return redirect('index')  # Remplacez 'home' par le nom de votre URL pour la page d'accueil
+#    else:
+#        form = LoginForm()
+#    return render(request, 'login.html', {'form': form})
 
 
 def useradmin(request):
@@ -87,20 +87,3 @@ def supprimer_article(request, id):
     return redirect('useradmin')
 
 
-
-# def new_article(request):
-#     auteur= request.user
-#     titre= request.POST['titre']
-#     contenu= request.POST['contenu']
-#     resume= request.POST['resume']
-#     article=Article.objects.create(
-#         auteur=auteur,
-#         titre=titre,
-#         resume=resume,
-#         contenu=contenu
-#     )
-#     article.save()
-#     messages.success(request, 'Article ajouté avec succés !')
-#     return redirect('ajouter_article')
-# 
-#     return render(request, "new_article.html")
