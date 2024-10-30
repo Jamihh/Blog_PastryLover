@@ -1,8 +1,9 @@
 from django.shortcuts import get_object_or_404, redirect, render
 from django.contrib import messages
 import articles
-from articles.forms import ArticleForm
+from articles.forms import ArticleForm, LoginForm
 from articles.models import Article
+from django.contrib.auth import authenticate # Importez authenticate ici
 
 
 # Create your views here.
@@ -13,8 +14,20 @@ def home(request):
 def accueil(request):
     return render(request, 'accueil.html')
 
+
 def login(request):
-    return render(request, 'login.html')
+    if request.method == 'POST':
+        form = LoginForm(request.POST)
+        if form.is_valid():
+            username = form.cleaned_data['username']
+            password = form.cleaned_data['password']
+            user = authenticate(request, username=username, password=password)
+            if user is not None:
+                login(request, user)
+                return redirect('index')  # Remplacez 'home' par le nom de votre URL pour la page d'accueil
+    else:
+        form = LoginForm()
+    return render(request, 'login.html', {'form': form})
 
 
 def useradmin(request):
